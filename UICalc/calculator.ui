@@ -1,0 +1,1251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>374</width>
+    <height>655</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Calculator</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>371</width>
+      <height>671</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QFrame" name="frame_2">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>10</y>
+       <width>361</width>
+       <height>681</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="geometry">
+       <rect>
+        <x>8</x>
+        <y>190</y>
+        <width>351</width>
+        <height>481</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <widget class="QWidget" name="std_page">
+       <widget class="QPushButton" name="PB_Subtraction">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>268</x>
+          <y>211</y>
+          <width>81</width>
+          <height>50</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 203, 246);
+font: 75 22pt &quot;Arial Rounded MT Bold&quot;;</string>
+        </property>
+        <property name="text">
+         <string>-</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="PB_9">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>179</x>
+          <y>150</y>
+          <width>89</width>
+          <height>50</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(170, 255, 255);
+font: 75 18pt &quot;Comic Sans MS&quot;;</string>
+        </property>
+        <property name="text">
+         <string>9</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="PB_2">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>91</x>
+          <y>272</y>
+          <width>88</width>
+          <height>50</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(170, 255, 255);
+font: 75 18pt &quot;Comic Sans MS&quot;;</string>
+        </property>
+        <property name="text">
+         <string>2</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="PB_ClearAll">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>2</x>
+          <y>89</y>
+          <width>89</width>
+          <height>50</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 87 12pt &quot;Arial Black&quot;;
+background-color: rgb(179, 179, 179);
+color: rgb(255, 0, 4);</string>
+        </property>
+        <property name="text">
+         <string>Clear All</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="PB_8">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>91</x>
+          <y>150</y>
+          <width>88</width>
+          <height>50</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(170, 255, 255);
+font: 75 18pt &quot;Comic Sans MS&quot;;</string>
+        </property>
+        <property name="text">
+         <string>8</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="PB_7">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>2</x>
+          <y>150</y>
+          <width>89</width>
+          <height>50</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(170, 255, 255);
+font: 75 18pt &quot;Comic Sans MS&quot;;</string>
+        </property>
+        <property name="text">
+         <string>7</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="PB_0">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>91</x>
+          <y>333</y>
+          <width>88</width>
+          <height>50</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(170, 255, 255);
+font: 75 18pt &quot;Comic Sans MS&quot;;</string>
+        </property>
+        <property name="text">
+         <string>0</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="PB_ans">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>2</x>
+          <y>333</y>
+          <width>89</width>
+          <height>50</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(94, 218, 255);
+font: 87 20pt &quot;Arial Black&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Ans</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="PB_4">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>2</x>
+          <y>211</y>
+          <width>89</width>
+          <height>50</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(170, 255, 255);
+font: 75 18pt &quot;Comic Sans MS&quot;;</string>
+        </property>
+        <property name="text">
+         <string>4</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="PB_Backspace">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>91</x>
+          <y>89</y>
+          <width>177</width>
+          <height>50</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 14pt &quot;Comic Sans MS&quot;;
+background-color: rgb(179, 179, 179);</string>
+        </property>
+        <property name="text">
+         <string>Backspace</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="PB_5">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>91</x>
+          <y>211</y>
+          <width>88</width>
+          <height>50</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(170, 255, 255);
+font: 75 18pt &quot;Comic Sans MS&quot;;</string>
+        </property>
+        <property name="text">
+         <string>5</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="PB_Addition">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>268</x>
+          <y>271</y>
+          <width>81</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 203, 246);
+font: 75 22pt &quot;Arial Rounded MT Bold&quot;;</string>
+        </property>
+        <property name="text">
+         <string>+</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="PB_EqualsTo">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>268</x>
+          <y>333</y>
+          <width>81</width>
+          <height>50</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 170, 127);
+font: 24pt &quot;MS Sans Serif&quot;;</string>
+        </property>
+        <property name="text">
+         <string>=</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="PB_6">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>179</x>
+          <y>211</y>
+          <width>89</width>
+          <height>50</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(170, 255, 255);
+font: 75 18pt &quot;Comic Sans MS&quot;;</string>
+        </property>
+        <property name="text">
+         <string>6</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="PB_DecimalPoint">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>179</x>
+          <y>333</y>
+          <width>89</width>
+          <height>50</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(170, 255, 255);
+font: 75 28pt &quot;Comic Sans MS&quot;;</string>
+        </property>
+        <property name="text">
+         <string>.</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="PB_3">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>179</x>
+          <y>272</y>
+          <width>89</width>
+          <height>50</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(170, 255, 255);
+font: 75 18pt &quot;Comic Sans MS&quot;;</string>
+        </property>
+        <property name="text">
+         <string>3</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="PB_1">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>2</x>
+          <y>272</y>
+          <width>89</width>
+          <height>50</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(170, 255, 255);
+font: 75 18pt &quot;Comic Sans MS&quot;;</string>
+        </property>
+        <property name="text">
+         <string>1</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="PB_Division">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>268</x>
+          <y>89</y>
+          <width>81</width>
+          <height>50</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 203, 246);
+font: 75 22pt &quot;Arial Rounded MT Bold&quot;;</string>
+        </property>
+        <property name="text">
+         <string>÷</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="PB_Multiplication">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>268</x>
+          <y>150</y>
+          <width>81</width>
+          <height>50</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 203, 246);
+font: 75 22pt &quot;Arial Rounded MT Bold&quot;;</string>
+        </property>
+        <property name="text">
+         <string>X</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="PB_cursorForward">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>176</x>
+          <y>30</y>
+          <width>89</width>
+          <height>50</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(170, 255, 255);
+font: 75 18pt &quot;Comic Sans MS&quot;;</string>
+        </property>
+        <property name="text">
+         <string>&gt;</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="PB_cursorBackward">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>88</x>
+          <y>30</y>
+          <width>88</width>
+          <height>50</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(170, 255, 255);
+font: 75 18pt &quot;Comic Sans MS&quot;;</string>
+        </property>
+        <property name="text">
+         <string>&lt;</string>
+        </property>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>390</y>
+          <width>351</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QPushButton" name="btn_open_paranthesis_2">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 75 22pt &quot;MS PGothic&quot;;
+background-color: rgb(92, 170, 110);</string>
+           </property>
+           <property name="text">
+            <string>(</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btn_close_paranthesis_3">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 75 22pt &quot;MS PGothic&quot;;
+background-color: rgb(92, 170, 110);</string>
+           </property>
+           <property name="text">
+            <string>,</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btn_close_paranthesis_2">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 75 22pt &quot;MS PGothic&quot;;
+background-color: rgb(92, 170, 110);</string>
+           </property>
+           <property name="text">
+            <string>)</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="adv_page">
+       <widget class="QFrame" name="frame_3">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>30</y>
+          <width>391</width>
+          <height>421</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QWidget" name="layoutWidget">
+         <property name="geometry">
+          <rect>
+           <x>5</x>
+           <y>0</y>
+           <width>341</width>
+           <height>421</height>
+          </rect>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_2">
+          <item row="0" column="1">
+           <widget class="QPushButton" name="btn_cos">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 75 12pt &quot;Comic Sans MS&quot;;
+background-color: rgb(156, 199, 255);</string>
+            </property>
+            <property name="text">
+             <string>cos(</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QPushButton" name="btn_sin">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 75 12pt &quot;Comic Sans MS&quot;;
+background-color: rgb(156, 199, 255);</string>
+            </property>
+            <property name="text">
+             <string>sin(</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QPushButton" name="btn_arcsinh">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 75 12pt &quot;Comic Sans MS&quot;;
+background-color: rgb(156, 199, 255);</string>
+            </property>
+            <property name="text">
+             <string>arc-sinh(</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="2">
+           <widget class="QPushButton" name="btn_arctanh">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 75 12pt &quot;Comic Sans MS&quot;;
+background-color: rgb(156, 199, 255);</string>
+            </property>
+            <property name="text">
+             <string>arc-tanh(</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="3">
+           <widget class="QPushButton" name="btn_c">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 75 10pt &quot;Comic Sans MS&quot;;
+background-color: rgb(215, 92, 255);</string>
+            </property>
+            <property name="text">
+             <string>Const 'c'</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="3">
+           <widget class="QPushButton" name="btn_e">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 75 10pt &quot;Comic Sans MS&quot;;
+background-color: rgb(215, 92, 255);</string>
+            </property>
+            <property name="text">
+             <string>Const 'e'</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QPushButton" name="btn_arcsin">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 75 12pt &quot;Comic Sans MS&quot;;
+background-color: rgb(156, 199, 255);</string>
+            </property>
+            <property name="text">
+             <string>arc-sin(</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2">
+           <widget class="QPushButton" name="btn_tan">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 75 12pt &quot;Comic Sans MS&quot;;
+background-color: rgb(156, 199, 255);</string>
+            </property>
+            <property name="text">
+             <string>tan(</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="2">
+           <widget class="QPushButton" name="btn_arctan">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 75 12pt &quot;Comic Sans MS&quot;;
+background-color: rgb(156, 199, 255);</string>
+            </property>
+            <property name="text">
+             <string>arc-tan(</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="1">
+           <widget class="QPushButton" name="btn_ceil">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 75 12pt &quot;Comic Sans MS&quot;;
+background-color: rgb(156, 199, 255);</string>
+            </property>
+            <property name="text">
+             <string>ceil(</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QPushButton" name="btn_sinh">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 75 12pt &quot;Comic Sans MS&quot;;
+background-color: rgb(156, 199, 255);</string>
+            </property>
+            <property name="text">
+             <string>sinh(</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QPushButton" name="btn_cosh">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 75 12pt &quot;Comic Sans MS&quot;;
+background-color: rgb(156, 199, 255);</string>
+            </property>
+            <property name="text">
+             <string>cosh(</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="0">
+           <widget class="QPushButton" name="btn_floor">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 75 12pt &quot;Comic Sans MS&quot;;
+background-color: rgb(156, 199, 255);</string>
+            </property>
+            <property name="text">
+             <string>floor(</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QPushButton" name="btn_arccos">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 75 12pt &quot;Comic Sans MS&quot;;
+background-color: rgb(156, 199, 255);</string>
+            </property>
+            <property name="text">
+             <string>arc-cos(</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="3">
+           <widget class="QPushButton" name="btn_h">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 75 10pt &quot;Comic Sans MS&quot;;
+background-color: rgb(215, 92, 255);</string>
+            </property>
+            <property name="text">
+             <string>Const 'h'</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="2">
+           <widget class="QPushButton" name="btn_tanh">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 75 12pt &quot;Comic Sans MS&quot;;
+background-color: rgb(156, 199, 255);</string>
+            </property>
+            <property name="text">
+             <string>tanh(</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <widget class="QPushButton" name="btn_arccosh">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 75 12pt &quot;Comic Sans MS&quot;;
+background-color: rgb(156, 199, 255);</string>
+            </property>
+            <property name="text">
+             <string>arc-cosh(</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="2">
+           <widget class="QPushButton" name="btn_remainder">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 75 12pt &quot;Comic Sans MS&quot;;
+background-color: rgb(156, 199, 255);</string>
+            </property>
+            <property name="text">
+             <string>remainder(</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="0">
+           <widget class="QPushButton" name="btn_exp">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">
+background-color: rgb(156, 199, 255);
+font: 75 9pt &quot;Comic Sans MS&quot;;</string>
+            </property>
+            <property name="text">
+             <string>EXP(e pow x)</string>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="3">
+           <widget class="QPushButton" name="btn_close_paranthesis">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 75 22pt &quot;MS PGothic&quot;;
+background-color: rgb(92, 170, 110);</string>
+            </property>
+            <property name="text">
+             <string>)</string>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="2">
+           <widget class="QPushButton" name="btn_abs">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 75 12pt &quot;Comic Sans MS&quot;;
+background-color: rgb(156, 199, 255);</string>
+            </property>
+            <property name="text">
+             <string>Absolute(</string>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="0">
+           <widget class="QPushButton" name="btn_pow">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 75 12pt &quot;Comic Sans MS&quot;;
+background-color: rgb(156, 199, 255);</string>
+            </property>
+            <property name="text">
+             <string>pow(x,y</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="3">
+           <widget class="QPushButton" name="btn_open_paranthesis">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 75 22pt &quot;MS PGothic&quot;;
+background-color: rgb(92, 170, 110);</string>
+            </property>
+            <property name="text">
+             <string>(</string>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="1">
+           <widget class="QPushButton" name="btn_sqroot">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 75 12pt &quot;Comic Sans MS&quot;;
+background-color: rgb(156, 199, 255);</string>
+            </property>
+            <property name="text">
+             <string>SqRoot(</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="1">
+           <widget class="QPushButton" name="btn_ln">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 75 12pt &quot;Comic Sans MS&quot;;
+background-color: rgb(156, 199, 255);</string>
+            </property>
+            <property name="text">
+             <string>ln(</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="2">
+           <widget class="QPushButton" name="btn_log10">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 75 12pt &quot;Comic Sans MS&quot;;
+background-color: rgb(156, 199, 255);</string>
+            </property>
+            <property name="text">
+             <string>log10(</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="3">
+           <widget class="QPushButton" name="btn_pi">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 75 10pt &quot;Comic Sans MS&quot;;
+background-color: rgb(215, 92, 255);</string>
+            </property>
+            <property name="text">
+             <string>Const 'Pi'</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="3">
+           <widget class="QPushButton" name="PB_EqualsTo_2">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(255, 170, 127);
+font: 24pt &quot;MS Sans Serif&quot;;</string>
+            </property>
+            <property name="text">
+             <string>=</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QLineEdit" name="LineDisplay">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>0</y>
+        <width>351</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 75 20pt &quot;Arial Narrow&quot;;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLCDNumber" name="LCDDisplay">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>70</y>
+        <width>351</width>
+        <height>51</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="StdBtn">
+      <property name="geometry">
+       <rect>
+        <x>9</x>
+        <y>130</y>
+        <width>171</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 255, 127);
+font: 75 11pt &quot;Cambria Math&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Standard Buttons</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="AdvBtn">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>130</y>
+        <width>171</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 255, 127);
+font: 75 11pt &quot;Cambria Math&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Advance Buttons</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
