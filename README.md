@@ -4,6 +4,7 @@ I have used the PySide package which is a Qt framework for Python, to implement 
 The source code of the calculator can be found in the UICalc folder.
 Some screenshots have also been added.
 For Windows users , here is the google drive link from where you can download the executabl file(.exe).
+[Calculator.exe](https://drive.google.com/file/d/0B88vkbpplS96WlYtaGFqNjR6TFU/view?usp=sharing)
 Just download and install it !!
 
 Guidelines for using the calculator::
