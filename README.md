@@ -1,6 +1,6 @@
-# KOSS_Task_Calculator
+# pyCalc
 
-This is the calculator made for KOSS Membership.
+A calculator made in python mimicing a scientific calculator .
 
 I have used the PySide package which is a Qt framework for Python, to implement this.
 
